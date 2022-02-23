@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <textarea cols="84" rows="41">
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int liczba;
+    int suma = 0;
+
+    cout << "Wpisz liczbe: ";
+    cin >> liczba;
+
+    
+    for (int i = 1; i <= (liczba / 2); i++)
+    {
+        if (liczba % i == 0)
+        {
+            suma = suma + i;
+        }
+    }
+
+    if (suma == liczba && liczba > 0)
+    {
+        cout << "Liczba jest doskonala"<<endl; }
+        else
+        {
+        cout << "Liczba nie jest doskonala"<<endl;
+    }
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+</textarea>
+
+
+
+
+
+
+
+</body>
+</html>

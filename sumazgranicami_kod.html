@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="content-type" CONTENT="text/html>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <textarea cols="84" rows="41">
+
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+system("chcp 1250");
+int gora_mas;
+cout<<"podaj górn¹ granicê obliczania sumy=";
+cin>>gora_mas;
+int dol_mas;
+cout<<"podaj doln¹ granicê obliczania sumy=";
+cin>>dol_mas;
+
+int suma_mas=0;
+for (int i=dol_mas+1;i<=gora_mas-1;i++)
+{
+suma_mas=suma_mas+i;
+}
+cout<<"suma="<<suma_mas<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+
+</textarea>
+    
+
+
+
+
+
+
+</body>
+</html>
